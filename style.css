@@ -1,0 +1,33 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: dimgray;
+    font-family: sans-serif;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 10rem 1fr 10rem;
+    max-width: 100rem;
+
+}
+
+header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    grid-column: -1/1;
+}
+.leftHead{
+    /* display: grid; */
+    align-items: flex-start;
+}
+.rightHead{
+    display: flex;
+    margin: 0;
+    padding: 30px;
+}
