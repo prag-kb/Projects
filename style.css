@@ -3,17 +3,19 @@
     padding: 0;
     margin: 0;
 }
-
+html{
+    font-size: 100%;
+    /* 100% is 16px....1 rem = (100*10)/16 ===> 1 rem = 10px...we calc this for easy rememberence....hereafter 1 rem is 10px.*/
+}
 body{
-    background-color: dimgray;
+    /* background-color: dimgray; */
     font-family: sans-serif;
 }
 
 .container{
     display: grid;
-    grid-template-columns: 10rem 1fr 10rem;
-    max-width: 100rem;
-
+    grid-template-columns: 8rem 1fr 8rem;
+    max-width: 150rem;
 }
 
 header{
@@ -23,11 +25,13 @@ header{
     grid-column: -1/1;
 }
 .leftHead{
-    /* display: grid; */
-    align-items: flex-start;
+    /* padding: 5rem; */
+    /* margin: 2px; */
+    
 }
 .rightHead{
     display: flex;
     margin: 0;
-    padding: 30px;
+    padding: 4rem;
+    gap: 1px;
 }
