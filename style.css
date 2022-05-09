@@ -4,7 +4,8 @@
     margin: 0;
 }
 html{
-    font-size: 100%;
+    /* font-size: 62.5%; */
+    font-size: 75%;
     /* 100% is 16px....1 rem = (100*10)/16 ===> 1 rem = 10px...we calc this for easy rememberence....hereafter 1 rem is 10px.*/
 }
 body{
@@ -15,23 +16,61 @@ body{
 .container{
     display: grid;
     grid-template-columns: 8rem 1fr 8rem;
-    max-width: 150rem;
+    max-width: 120rem;
+    margin: 0 auto;
+    padding: 0 55px ;
 }
 
 header{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     grid-column: -1/1;
+    /* bottom: 4%; */
+    /* padding: 50px; */
 }
+
 .leftHead{
-    /* padding: 5rem; */
-    /* margin: 2px; */
-    
+    padding: 50px;
 }
 .rightHead{
     display: flex;
-    margin: 0;
-    padding: 4rem;
-    gap: 1px;
+    padding: 50px;
+}
+.rightHead p{
+    padding: 5px;
+}
+
+nav{
+    margin: 5rem;
+    /* list-style: none;           this line wont occur , cz it considers whole Nav*/   
+}
+nav .icons{
+    list-style: none;
+}
+nav .icon{
+    padding: 1rem;
+}
+
+nav .icon :active{
+cursor: pointer;
+border-bottom: 2px;
+}
+
+/* nav .icons #borderBot{
+    border-bottom: 5px;
+} */
+article{
+    font-size: 1.5rem;
+}
+article .bodyHeading{
+    display:inline-block;
+    padding: 2rem 0 0 2rem;
+}
+
+article .innerContainer{
+    display: grid;
+    grid-template-columns: 2rem 1fr 2rem;
+    padding: 3rem;
+    gap: 5rem;
 }
