@@ -42,24 +42,27 @@ header{
 }
 
 nav{
-    margin: 5rem;
+    margin-bottom: 5rem;
+
     /* list-style: none;           this line wont occur , cz it considers whole Nav*/   
 }
 nav .icons{
     list-style: none;
+    
 }
 nav .icon{
+    color: black;
     padding: 1rem;
+    
 }
 
+nav .icon :hover{
+    cursor: pointer;
+}
 nav .icon :active{
-cursor: pointer;
-border-bottom: 2px;
+    color: #fff;
 }
 
-/* nav .icons #borderBot{
-    border-bottom: 5px;
-} */
 article{
     font-size: 1.5rem;
 }
@@ -73,4 +76,20 @@ article .innerContainer{
     grid-template-columns: 2rem 1fr 2rem;
     padding: 3rem;
     gap: 5rem;
+}
+
+
+
+footer{
+    display: flex;
+    align-items: center;
+    grid-column: 1/-1;
+    gap: 8rem;
+    /* flex-wrap: wrap; */
+    
+}
+footer img {
+    display: flex;
+    height: 50px;
+    padding-left: 5rem;
 }
