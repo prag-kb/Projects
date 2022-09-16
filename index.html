@@ -1,144 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <script src="script.js"></script>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-</head>
-
-<body>
-
-    <div class="container">
-
-        <!-- Header content -->
-        <header>
-           
-            <h4 class="leftHead">GLOBAL NETWORK PORTAL</h4>
-            
-            <div class="rightHead">
-                <i class="material-icons">phone</i>
-                <p>On Call</p>
-            </div>
-
-        </header>
-
-        <!-- main content -->
-
-        <main>
-            <!-- left nav bar  -->
-            <nav>
-                <ul class="icons">
-                    <a href="#">
-                        <li class="icon" id="borderBot">
-                            <i class="material-icons">dashboard</i>
-                        </li>
-                    </a>
-                    <!-- <br> -->
-                    <a href="#">
-                        <li class="icon">
-                            <i class="material-icons">developer_board</i>
-                        </li>
-                    </a>
-                    <!-- <br> -->
-                    <a href="#">
-                        <li class="icon">
-                            <i class="material-icons">business</i>
-                        </li>
-                    </a>
-                    <!-- <br> -->
-                    <a href="#">
-                        <li class="icon">
-                            <i class="material-icons">class</i>
-                        </li>
-                    </a>
-                    <!-- <br> -->
-                    <a href="#">
-                        <li class="icon">
-                            <i class="material-icons">collections_bookmark</i>
-                        </li>
-                    </a>
-                    <!-- <br> -->
-                    <a href="#">
-                        <li class="icon">
-                            <i class="material-icons">border_color</i>
-                        </li>
-                    </a>
-                    <!-- <br> -->
-                    <a href="#">
-                        <li class="icon">
-                            <i class="material-icons">event_seat</i>
-                        </li>
-                    </a>
-                    <!-- <br> -->
-                    <a href="#">
-                        <li class="icon">
-                            <i class="material-icons">featured_video</i>
-                        </li>
-                    </a>
-                </ul>
-            </nav>
-
-            <!-- Body content -->
-
-            <article>
-                <h4 class="bodyHeading">
-                    <h3>DashBoard</h3>
-                </h4>
-                <div class="innerContainer">
-
-                    <section class="title1">
-                        <p>Marvel</p>
-                        <p>Datacenter Overview</p>
-                        <div class="chartOne">
-                            <div class="pie-chart"></div>
-                        </div>
-                    </section>
-
-                    <section class="title2">
-                        <p>Studio Production Network</p>
-                        <p>Requests Overview</p>
-                        <div class="chartTwo">
-                            <div class="donut-chart"></div>
-                        </div>
-                    </section>
-
-                    <section class="title3">
-                        <p>Motion Picture Network</p>
-                        <p class="t3para">qwertyuiop[]asdfghhjkl;'zxcvbnm,./</p>
-                    </section>
-
-                    <section class="title4">
-                        <p>SearchLight</p>
-                        <p>Datacenter Overview</p>
-                        <div class="chartFour">
-                            <div class="pie-chart"></div>
-                        </div>
-                    </section>
-
-                    <section class="title5">
-                        <p>TCC Title</p>
-                    </section>
-
-                    <section class="title6">
-                        <p>Learn More</p>
-                    </section>
-            </article>
-        </main>
-
-        <!-- footer content -->
-
-        <footer>
-            <img class='logo' src="./images.png" alt="walt-disney LOGO" height="40" width="220">
-            <p>&copy; Copyright - The Walt Disney Studios - Studio Technology - Motion Picture Innovation </p>
-        </footer>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="calculator-form">
+      <h1>Age Calculator</h1>
+      <div class="inputs">
+        <div class="block">
+          <label for="date">Date</label>
+          <input
+            type="number"
+            max="31"
+            min="01"
+            id="date"
+            class="input"
+            placeholder="DD"
+          />
+        </div>
+        <div class="block">
+          <label for="month">Month</label>
+          <input
+            type="number"
+            max="012"
+            min="01"
+            id="month"
+            class="input"
+            placeholder="MM"
+          />
+        </div>
+        <div class="block">
+          <label for="year">Year</label>
+          <input
+            type="number"
+            min="1922"
+            max="2022"
+            id="year"
+            class="input"
+            placeholder="YYYY"
+          />
+        </div>
+      </div>
+      <button type="submit" class="btn" onclick="calculateAge()">Submit</button>
+      <p id="displayage"></p>
+      <script src="main.js"></script>
     </div>
-
-</body>
-
+  </body>
 </html>
